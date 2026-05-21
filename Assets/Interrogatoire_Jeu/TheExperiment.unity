@@ -6404,6 +6404,9 @@ GameObject:
   - component: {fileID: 1390555972}
   - component: {fileID: 1390555969}
   - component: {fileID: 1390555971}
+  - component: {fileID: 1390555976}
+  - component: {fileID: 1390555975}
+  - component: {fileID: 1390555977}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -6424,21 +6427,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 5435.1763, y: 2650.3064}
+  scrollPos: {x: 3760.011, y: 2335.2559}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 566
-  zoom: 0.25
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -4071.385
     y: -1729.3505
     width: 5969.446
     height: 2818.8503
-  selectedBlocks:
-  - {fileID: 1390555750}
-  selectedCommands:
-  - {fileID: 1390555965}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 1390555398}
   - {fileID: 1390555413}
@@ -6497,6 +6498,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1390555976}
+  - {fileID: 1390555977}
   - {fileID: 1390555900}
   - {fileID: 1390555899}
   - {fileID: 1390555898}
@@ -29078,6 +29081,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1390555967}
   - {fileID: 1390555846}
+  - {fileID: 1390555975}
   - {fileID: 1390555905}
   - {fileID: 1390555847}
   - {fileID: 1390555845}
@@ -35907,6 +35911,55 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1390555975
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390555290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.StopMusic
+  itemId: 667
+  indentLevel: 0
+--- !u!114 &1390555976
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390555290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.PlayMusic
+  itemId: 666
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 82f46a286cb303c40ae78a14356ad5ba, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1390555977
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390555290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4015e84616cc45cfb498561373899d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.SetAudioVolume
+  itemId: 668
+  indentLevel: 0
+  volume: 0.221
+  fadeDuration: 0
+  waitUntilFinished: 1
 --- !u!1 &1403072068
 GameObject:
   m_ObjectHideFlags: 0
